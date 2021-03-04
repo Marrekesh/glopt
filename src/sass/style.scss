@@ -1,0 +1,15 @@
+@import "base/variables";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import "block/promo";
+@import "block/header";
+@import "block/buttons";
