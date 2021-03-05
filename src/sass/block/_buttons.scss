@@ -10,4 +10,15 @@
     border-radius: 35px;
     border: none;
     cursor: pointer;
+    &_medium {
+        width: 180px;
+        height: 45px;
+    }
+    &_large {
+        width: 230px;
+        height: 57px;
+        font-size: 15px;
+        line-height: 17px;
+        font-weight: 700;
+    }
 }

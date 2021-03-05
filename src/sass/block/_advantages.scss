@@ -1,0 +1,18 @@
+.advantages {
+    min-height: 590px;
+    background-color: #f3f3f3;
+    padding: 57px 0 51px 0;
+    .title {
+        margin-bottom: 38px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(500px, auto));
+        grid-template-rows: repeat(4, minmax(65px, auto));;
+        gap: 40px;
+        
+    }
+    &__item {
+        background-color: blue;
+    }
+}
