@@ -1,4 +1,5 @@
 @import "base/variables";
+@import "libs/slick";
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -15,4 +16,8 @@
 @import "block/buttons";
 @import "block/advantages";
 @import "block/title";
-
+@import "block/job";
+@import "block/line";
+@import "block/agent";
+@import "block/round";
+@import "block/variant";

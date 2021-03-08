@@ -1,0 +1,112 @@
+.variant {
+    min-height: 952px;
+    padding: 53px 0 58px 0;
+    .title {
+        margin-bottom: 20px;
+    }
+    &__description {
+        margin: 0 auto;
+        width: 691px;
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #2e2e2e;
+        text-align: center;
+        margin-bottom: 34px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        position: relative;
+        padding: 3px 3px 26px 3px;
+        width: 267px;
+        min-height: 357px;
+        border: 1px solid #e9e9e9;
+        overflow: hidden;
+        &__delivery {
+            display: flex;
+            width: 261px;
+            height: 61px;
+            background-color: $sub-color;
+            font-size: 16px;
+            line-height: 23px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            justify-content: center;
+            align-items: center;
+        }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content {
+            width: 50%;
+            padding: 14px 19px 0 14px;
+            transform: translateX(-100%);
+            transition: .5s all;
+            &_active {
+                transform: translateX(0);
+            }
+            .button {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__icon {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 12px;
+
+        }
+        &__subtitle {
+            text-align: center;
+            font-size: 14px;
+            line-height: 23px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #2e2e2e;
+            margin-bottom: 19px;
+            span {
+                font-size: 28px;
+                line-height: 30px;
+                text-transform: none;
+                color: $main-color;
+            }
+        }
+        &__text {
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #2e2e2e;
+            margin-bottom: 25px;
+            width: 235px;
+            
+        }
+        .button {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &__switch {
+            position: relative;
+            padding: 14px 19px 0 14px;
+            width: 50%;
+            transform: translateX(0);
+            transition: .5s all;
+            &_active {
+                transform: translateX(-100%);
+            }
+            .button {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(calc(-50% - 5px));
+            }
+        }
+        
+    }
+}

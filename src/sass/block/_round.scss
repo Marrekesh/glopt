@@ -1,0 +1,14 @@
+.round {
+    width: 102px;
+    height: 102px;
+    display: flex;
+    border: 1px solid #ffffff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    &_main {
+        border: 1px solid $main-color;
+    }
+}

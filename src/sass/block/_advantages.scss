@@ -4,15 +4,37 @@
     padding: 57px 0 51px 0;
     .title {
         margin-bottom: 38px;
+
     }
     &__items {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(500px, auto));
-        grid-template-rows: repeat(4, minmax(65px, auto));;
-        gap: 40px;
-        
+        display: flex;
+        flex-wrap: wrap;
     }
     &__item {
-        background-color: blue;
+        display: flex;
+        margin-bottom: 36px;
+        align-items: flex-start;
+        margin-right: 62px;
     }
+    &__lable {
+        margin-right: 17px;
+    }
+    &__descr {
+        width: 430px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+        color: $main-color;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        color: #3a3a3a;
+        line-height: 22px;
+
+    }
+
 }
