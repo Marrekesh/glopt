@@ -1,22 +1,23 @@
-.agent {
+.manager {
     min-height: 342px;
-    background: url("../img/background_2.png") center (center/cover) no-repeat;
-    padding: 58px 0 74px 0;
+    background: url("../img/layers.png") center (center/cover) no-repeat;
+    padding: 58px 0 76px 0;
     &__title {
-        text-align: center;
         font-size: 26px;
         line-height: 23px;
         font-weight: 700;
         color: #ffffff;
-        margin-bottom: 20px;
+        text-align: center;
+        margin-bottom: 18px;
     }
     &__description {
-        max-width: 985px;
         margin: 0 auto;
-        text-align: center;
+        max-width: 925px;
         font-size: 19px;
         line-height: 27px;
         font-weight: 300;
         color: #ffffff;
+        text-align: center;
     }
+    
 }

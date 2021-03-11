@@ -1,5 +1,15 @@
 $(document).ready(function(){
-    function toggleSlide(item) {
+    $('.slider').slick({
+
+        // variableWidth: true,
+        // centerMode: true,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        infinite: false,
+
+    });
+
+      function toggleSlide(item) {
         $(item).each(function(i) {
             $(this).on('click', function(e) {
                 e.preventDefault();
@@ -11,4 +21,5 @@ $(document).ready(function(){
 
     toggleSlide('.variant-item__details');
     toggleSlide('.variant-item__back');
-}) 
+        
+});
