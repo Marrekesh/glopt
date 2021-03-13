@@ -3,28 +3,23 @@ $(document).ready(function(){
         infinite:true,
         centerMode: true,
         slidesToScroll: 1,
-        centerPadding: '60px',
+        variableWidth: true,
         slidesToShow: 3,
-        responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-              }
-            }
-        ]
+        centerPadding: '60px',
+        adaptiveHeight: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icon/prev.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icon/next.png"></button>',
+        // responsive: [
+        //     {
+        //       breakpoint: 767,
+        //       settings: {
+        //         arrows: false,
+        //         centerMode: true,
+        //         centerPadding: '40px',
+        //         slidesToShow: 1
+        //       }
+        //     }
+        // ]
 
     });
 
