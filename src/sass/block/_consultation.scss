@@ -40,9 +40,10 @@
         top: 0;
         background-color: #fff;
         padding: 0 10px;
-        .round {
-            margin-bottom: 0;
-        }
+    }
+    &__round {
+        border: 1px solid $main-color;
+        margin-bottom: 0;
     }
     &__btn {
         position: absolute;

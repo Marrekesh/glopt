@@ -1,8 +1,6 @@
 .carousel-wrapper {
-    // position: relative;
     margin: 0 auto;
     max-width: calc(1400px + 30px);
-    // padding: 0 15px;
     overflow: hidden;
 }
 .carousel {
@@ -18,7 +16,7 @@
     }
 
     &__text-wrapper {
-        text-align: center;
+        text-align: justify;
         color: #3a3a3a;
         display: flex;
         justify-content: center;
@@ -34,9 +32,9 @@
         margin-bottom: 20px;
     }
     &__descr {
-        font-weight: 300; 
+        font-weight: 400; 
         font-size: 14px;
-        line-height: 22.01px;
+        line-height: 22px;
         width: 600px;
     }
     .slick-slide {

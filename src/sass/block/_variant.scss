@@ -1,7 +1,7 @@
 .variant {
     min-height: 608px;
     padding: 53px 0 55px 0;
-    .title {
+    &__title {
         margin-bottom: 20px;
     }
     &__description {
@@ -19,6 +19,7 @@
         justify-content: space-between;;
     }
     &-item {
+        flex: 0 0 calc(25% - 10px);
         position: relative;
         padding: 3px 3px 26px 3px;
         width: 267px;
