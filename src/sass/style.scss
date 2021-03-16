@@ -15,9 +15,10 @@
     max-width: 1140px;
     margin: 0 auto;
 }
-
+@import "block/logo";
 @import "block/promo";
 @import "block/header";
+@import "block/contact";
 @import "block/buttons";
 @import "block/advantages";
 @import "block/title";
@@ -33,3 +34,5 @@
 @import "block/carousel";
 @import "block/questions";
 @import "block/form";
+@import "block/map";
+@import "block/footer";
