@@ -2,7 +2,6 @@
     position: relative;
     min-height: 350px;
     padding-bottom: 58px;
-    z-index: 1;
     &__subtitle {
         text-align: center;
         font-size: 28px;
@@ -19,8 +18,8 @@
         border: 1px solid #898989;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 67px 160px 52px 160px;
+        justify-content: center;
+        padding: 67px 0 52px 0;
         z-index: 2;
         input {
             width: 270px;
@@ -28,6 +27,7 @@
             border-radius: 35px;
             padding: 19px 0 19px 30px;
             border: 1px solid #898989;
+            margin: 0 5px;
             &:focus {
                 outline: none;
             }

@@ -1,7 +1,6 @@
 // @import 'libs/bootstrap-reboot.min';
 @import "base/zero";
 @import "base/variables";
-@import "base/media";
 @import "libs/slick";
 
 
@@ -21,9 +20,9 @@
     text-align: center
 }
 
-@import "block/logo";
 @import "block/promo";
 @import "block/header";
+@import "block/logo";
 @import "block/contact";
 @import "block/buttons";
 @import "block/advantages";
@@ -42,3 +41,4 @@
 @import "block/form";
 @import "block/map";
 @import "block/footer";
+@import "base/media";
