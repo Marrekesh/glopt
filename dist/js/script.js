@@ -39,7 +39,7 @@ $(document).ready(function(){
     $('.header__hamburger').on('click', function(e) {
         e.preventDefault();
         $('.header__hamburger').toggleClass('header__hamburger_active');
-        $('.header__menu').toggleClass('header__menu_active');
+        $('.header__toggle').toggleClass('header__toggle_active');
     })
         
 });
