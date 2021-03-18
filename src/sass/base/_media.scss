@@ -132,7 +132,7 @@
                 font-size: 15px;
             }
             &__text {
-                font-size: 13px;
+                font-size: 14px;
             }
         }
     }
@@ -148,7 +148,7 @@
                 font-size: 17px;
             }
             &__descr {
-                font-size: 13px;
+                font-size: 14px;
             }
         }
     }
@@ -172,11 +172,10 @@
 @media(max-width: 992px) {
     .container {
         max-width: 750px;
-        padding: 0 10px;
     }
     .header {
         .logo {
-            width: 50px;
+            width: 48px;
             height: 50px;
         }
         &__item {
@@ -212,9 +211,9 @@
             font-size: 30px;
         }
         .button {
-            width: 170px;
-            height: 40px;
-            font-size: 12px;
+            width: 200px;
+            height: 46px;
+            font-size: 14px;
         }
     }
     .advantages {
@@ -225,9 +224,6 @@
     .job {
         &__title {
             font-size: 24px;
-        }
-        &__description {
-            font-size: 18px;
         }
         &-item {
             &__subtitle {
@@ -259,21 +255,6 @@
             &__content {
                 padding: 14px 35px 0 20px;
             }
-            &__subtitle {
-                font-size: 13px;
-                margin-bottom: 14px;
-                span {
-                    font-size: 27px;
-                }
-            }
-            &__text {
-                font-size: 13px;
-            }
-            &__details, &__back {
-                width: 150px;
-                height: 40px;
-                font-size: 11px;
-            }
         }
     }
     .consultation {
@@ -281,16 +262,13 @@
             font-size: 24px;
         }
         .button {
-            width: 140px;
+            width: 150px;
             height: 40px;
         }
     }
     .manager {
         &__title {
             font-size: 24px;
-        }
-        &__description {
-            font-size: 18px;
         }
     }
     .schema {
@@ -299,9 +277,6 @@
         }
         &-item {
             flex: 0 0 calc(33% - 10px);
-            &__subtitle {
-                font-size: 15px;
-            }
             &__text {
                 font-size: 14px;
             }
@@ -356,6 +331,97 @@
         }
         &__create {
             font-size: 11px;
+        }
+    }
+}
+@media(max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        position: relative;
+        min-height: 70px;
+        overflow: hidden; 
+        .logo {
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+            width: 65px;
+            height: 65px;
+        }
+        &__menu {
+            display: block;
+            background-color: $main-color;
+            position: absolute;
+            width: 100%;
+            min-height: 50%;
+            top: 100px;
+            left: -100%;
+            padding: 20px;
+            transition: all .3s ease-in; 
+            &_active {
+                left: 0;
+                position: fixed;
+            }
+        }
+        &__item {
+            display: block;
+            margin: 0;
+            border: none;
+            line-height: 60px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        &__link {
+            display: block;
+            font-size: 20px;
+            background: none;
+            &:hover {
+                color: $sub-color;
+            }
+        }
+        .contact {
+            &__subtitle {
+                display: none;
+            }
+            &__phone {
+                display: none;
+            }
+            .button {
+                width: 120px;
+                height: 40px;
+                font-size: 10px
+            }
+        }
+        &__hamburger {
+            display: block;
+            width: 40px;
+            height: 12px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            span {
+                display: block;
+                height: 3px;
+                margin-bottom: 4px;
+                background-color: #fff;
+                width: 100%;
+                transition: 0.6s all
+            }
+            &_active {
+                position: fixed;
+                span {
+                    background-color: $main-color;
+                    &:nth-child(1) {
+                        transform: translateY(10px) rotate(45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform:  translateY(3px)rotate(-45deg);
+                    }
+                }
+            }
         }
     }
 }

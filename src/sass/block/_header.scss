@@ -1,9 +1,10 @@
 .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 9px;
-    &__logo {
+    .logo {
         width: 96px;
         height: 100px;
         img {
@@ -38,5 +39,8 @@
            color: $main-color;
            background-size:100% 1px;
         }
+    }
+    &__hamburger {
+        display: none;
     }
 }
