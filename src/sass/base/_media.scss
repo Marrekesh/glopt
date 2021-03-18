@@ -4,7 +4,6 @@
         padding: 0 10px;
     }
     .header {
-        padding: 0 10px 0 10px;
         .logo {
             width: 83px;
             height: 98px;
@@ -55,9 +54,6 @@
         &__title {
             font-size: 25px;
         }
-        &__items {
-
-        }
         .advantages-item {
             flex: 0 1 calc(50% - 15px);
         }
@@ -72,7 +68,7 @@
         }
         &-item {
             &__text {
-                font-size: 13px;
+                font-size: 14px;
             }
         }
     }
@@ -156,9 +152,210 @@
             }
         }
     }
-    .questions {
+    .footer {
+        .contact {
+            &__subtitle {
+                font-size: 13px;
+                line-height: 20px;
+            }
+            &__phone {
+                font-size: 15px;
+            }
+            .button {
+                width: 150px;
+                height: 40px;
+                font-size: 11px;
+            }
+        }
+    }
+}
+@media(max-width: 992px) {
+    .container {
+        max-width: 750px;
+        padding: 0 10px;
+    }
+    .header {
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+        &__item {
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+        &__link {
+            font-size: 10px;
+        }
+        .contact {
+            &__subtitle {
+                font-size: 10px;
+                line-height: 15px;
+            }
+            &__phone {
+                font-size: 13px;
+            }
+            .button {
+                width: 100px;
+                height: 30px;
+                font-size: 8px;
+            }
+        }
+    }
+    .promo {
+        &__global {
+            font-size: 18px;
+        }
+        &__header {
+            font-size: 50px;
+        }
+        &__subheader {
+            font-size: 30px;
+        }
         .button {
-
+            width: 170px;
+            height: 40px;
+            font-size: 12px;
+        }
+    }
+    .advantages {
+        &__title {
+            font-size: 24px;
+        }
+    }
+    .job {
+        &__title {
+            font-size: 24px;
+        }
+        &__description {
+            font-size: 18px;
+        }
+        &-item {
+            &__subtitle {
+                font-size: 16px;
+            }
+        }
+    }
+    .agent {
+        &__title {
+            font-size: 24px;
+        }
+        &__description {
+            font-size: 18px;
+        }
+    }
+    .variant {
+        &__title {
+            font-size: 24px;
+        }
+        &__description {
+            font-size: 18px;
+        }
+        &__items {
+            flex-wrap: wrap;
+        }
+        &-item {
+            flex: 0 0 calc(50% - 10px);
+            margin-bottom: 30px;
+            &__content {
+                padding: 14px 35px 0 20px;
+            }
+            &__subtitle {
+                font-size: 13px;
+                margin-bottom: 14px;
+                span {
+                    font-size: 27px;
+                }
+            }
+            &__text {
+                font-size: 13px;
+            }
+            &__details, &__back {
+                width: 150px;
+                height: 40px;
+                font-size: 11px;
+            }
+        }
+    }
+    .consultation {
+        &__subtitle {
+            font-size: 24px;
+        }
+        .button {
+            width: 140px;
+            height: 40px;
+        }
+    }
+    .manager {
+        &__title {
+            font-size: 24px;
+        }
+        &__description {
+            font-size: 18px;
+        }
+    }
+    .schema {
+        .title {
+            font-size: 24px;
+        }
+        &-item {
+            flex: 0 0 calc(33% - 10px);
+            &__subtitle {
+                font-size: 15px;
+            }
+            &__text {
+                font-size: 14px;
+            }
+        }
+    }
+    .reviews {
+        .title {
+            font-size: 24px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+    }
+    .questions {
+        .form {
+            &__input {
+                display: flex;
+                justify-content: center;   
+            }
+            .button {
+                width: 150px;
+                height: 40px;
+            }
+        }
+    }
+    .footer {
+        &__text {
+            font-size: 13px;
+        }
+        .contact {
+            &__subtitle {
+                font-size: 10px;
+                line-height: 15px;
+            }
+            &__phone {
+                font-size: 13px;
+            }
+            .button {
+                width: 100px;
+                height: 30px;
+                font-size: 8px;
+            }
+        }
+        &__copyright {
+            font-size: 11px;
+            margin-right: 100px;
+        }
+        &__politic {
+            a {
+                font-size: 11px;
+            }
+        }
+        &__create {
+            font-size: 11px;
         }
     }
 }
