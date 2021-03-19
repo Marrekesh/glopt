@@ -529,7 +529,6 @@
         &__form {
             display: flex;
             flex-wrap: wrap;
-            // flex-wrap: wrap;
             min-height:200px;
             input {
                 width: 100%;
@@ -561,55 +560,104 @@
             }
         }
     }
-    // .reviews {
-    //     .title {
-    //         font-size: 24px;
-    //     }
-    //     &__subtitle {
-    //         font-size: 18px;
-    //     }
-    // }
-    // .questions {
-    //     .form {
-    //         &__input {
-    //             display: flex;
-    //             justify-content: center;   
-    //         }
-    //         .button {
-    //             width: 150px;
-    //             height: 40px;
-    //         }
-    //     }
-    // }
-    // .footer {
-    //     &__text {
-    //         font-size: 13px;
-    //     }
-    //     .contact {
-    //         &__subtitle {
-    //             font-size: 10px;
-    //             line-height: 15px;
-    //         }
-    //         &__phone {
-    //             font-size: 13px;
-    //         }
-    //         .button {
-    //             width: 100px;
-    //             height: 30px;
-    //             font-size: 8px;
-    //         }
-    //     }
-    //     &__copyright {
-    //         font-size: 11px;
-    //         margin-right: 100px;
-    //     }
-    //     &__politic {
-    //         a {
-    //             font-size: 11px;
-    //         }
-    //     }
-    //     &__create {
-    //         font-size: 11px;
-    //     }
-    // }
+    .reviews {
+        .title {
+            font-size: 20px;
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+        .carousel {
+            &__descr {
+                width: 500px;
+            }
+        }
+    }
+    .questions {
+        .form {
+            &__input {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                input {
+                    width: 100%;
+                }   
+            }
+        }
+    }
+    .footer {
+        &__logo {
+            width: 65px;
+            height: 65px;
+        }
+        &__text {
+            font-size: 13px;
+        }
+        .contact {
+            &__subtitle {
+                display: none;
+            }
+            &__phone {
+                display: none;
+            }
+            .button {
+                width: 100px;
+                height: 30px;
+                font-size: 8px;
+            }
+        }
+    }
+}
+@media(max-width: 620px) {
+    .schema {
+        &__items {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .reviews {
+        .title {
+            font-size: 20px;
+        }
+        &__subtitle {
+            font-size: 15px;
+            max-width: 400px;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .carousel {
+            &__descr {
+                max-width: 400px;
+            }
+        }
+    }
+    .footer {
+        &__logo {
+            width: 65px;
+            height: 65px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+        .contact {
+            &__subtitle {
+                display: none;
+            }
+            &__phone {
+                display: none;
+            }
+            .button {
+                width: 100px;
+                height: 30px;
+                font-size: 8px;
+            }
+        }
+        &__copyright {
+            margin-right: 20px;
+        }
+    }
+}
+@media(max-width: 484px) {
+
 }

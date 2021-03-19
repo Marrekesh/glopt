@@ -9,17 +9,17 @@ $(document).ready(function(){
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="icon/prev.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icon/next.png"></button>',
-        // responsive: [
-        //     {
-        //       breakpoint: 767,
-        //       settings: {
-        //         arrows: false,
-        //         centerMode: true,
-        //         centerPadding: '40px',
-        //         slidesToShow: 1
-        //       }
-        //     }
-        // ]
+        responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                // arrows: true,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+        ]
 
     });
 
