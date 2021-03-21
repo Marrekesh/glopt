@@ -2,16 +2,16 @@
     min-height: 438px;
     background: url("../../img/background_3.png") center (center/cover) no-repeat;
     padding: 62px 0 79px 0;
-    &__block {
-        display: block;
-        margin: 0 auto;
-        max-width: 896px;
-    }
+}
+.questions-block {
+    display: block;
+    margin: 0 auto;
+    max-width: 896px;
     &__subtitle-block {
-        text-align: center;
-        width: 100%;
-        background-color: $sub-color;
-        padding: 20px 0 19px 0;
+    text-align: center;
+    width: 100%;
+    background-color: $sub-color;
+    padding: 20px 0 19px 0;
     }
     &__subtile {
         font-size: 19px;
@@ -26,5 +26,4 @@
         text-transform: uppercase;
         color: #ffffff;
     }
-
 }

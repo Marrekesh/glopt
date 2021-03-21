@@ -11,7 +11,7 @@
     <title>Glupt</title>
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <div class="logo">
@@ -53,7 +53,7 @@
                         <div class="contact__subtitle">Есть вопросы?</div> 
                         <a href="tel:+79264230100" class="contact__phone">+7 (926) 423 01 00</a>
                     </div>
-                    <button class="button">Перезвоните мне</button>
+                    <button class="button contact__button">Перезвоните мне</button>
                 </div> 
             </header>
             <div class="promo__global">Global Opt - логистика полного цикла из Китая в Россию</div>
@@ -483,10 +483,10 @@
     </section>
     <section class="questions">
         <div class="container">
-            <div class="questions__block">
-                <div class="questions__subtitle-block">
-                    <h2 class="questions__subtile">Остались вопросы?</h2>
-                    <div class="questions__descr">Напишите нам!</div>
+            <div class="questions-block">
+                <div class="questions-block__subtitle-block">
+                    <h2 class="questions-block__subtile">Остались вопросы?</h2>
+                    <div class="questions-block__descr">Напишите нам!</div>
                 </div>
                 <form class="form">
                     <div class="form__input">
@@ -521,7 +521,7 @@
                         <div class="contact__subtitle">Есть вопросы?</div>
                         <a href="tel:+79264230100" class="contact__phone">+7 (926) 423 01 00</a>
                     </div>
-                    <button class="button">Перезвоните мне</button>
+                    <button class="button contact__button">Перезвоните мне</button>
                 </div>
             </div>
             <hr>
@@ -540,7 +540,55 @@
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
+
+    <a href="#up" class="chevron">
+        <img src="icon/chevron-circle-up-solid (1).svg" alt="chevron">
+    </a>
+
+    <div class="overlay">
+        <div class="modal modal-data">
+            <div class="modal__close">&times</div>
+            <div class="questions-block">
+                <div class="questions-block__subtitle-block">
+                    <h2 class="questions-block__subtile">Укажите свои данные</h2>
+                    <div class="questions-block__descr">и мы свяжемся с вами!</div>
+                </div>
+            </div>
+            <form class="form modal__form">
+                <div class="form__input">
+                    <input name="name" placeholder="Ваше имя..." type="text">
+                    <input name="phone" placeholder="Ваш номер телефона...">
+                    <input name="email" placeholder="Ваш e-mail..." type="email">
+                </div>
+                <div class="form__textarea">
+                    <textarea name="textarea" placeholder="Сообщение..." type="textarea"></textarea>
+                </div>
+                <button class="button buttin_medium center">Отправить заявку</button>
+            </form>
+        </div>
+
+        <div class="modal modal-payment">
+            <div class="modal__close">&times</div>
+            <div class="questions-block">
+                <div class="questions-block__subtitle-block">
+                    <h2 class="questions-block__subtile">Оставьте всю необходимую информацию и мы произведем расчет</h2>
+                </div>
+            </div>
+            <form class="form modal__form">
+                <div class="form__input">
+                    <input name="name" placeholder="Ваше имя..." type="text">
+                    <input name="phone" placeholder="Ваш номер телефона...">
+                    <input name="email" placeholder="Ваш e-mail..." type="email">
+                </div>
+                <div class="form__textarea">
+                    <textarea name="textarea" placeholder="Сообщение..." type="textarea"></textarea>
+                </div>
+                <button class="button buttin_medium center">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>

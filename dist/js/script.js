@@ -22,6 +22,8 @@ $(document).ready(function(){
         ]
 
     });
+      
+    //Card
 
       function toggleSlide(item) {
         $(item).each(function(i) {
@@ -36,10 +38,44 @@ $(document).ready(function(){
     toggleSlide('.variant-item__details');
     toggleSlide('.variant-item__back');
 
+    //Hamburger
+
     $('.header__hamburger').on('click', function(e) {
         e.preventDefault();
         $('.header__hamburger').toggleClass('header__hamburger_active');
         $('.header__toggle').toggleClass('header__toggle_active');
-    })
+    });
+
+    //Buttot from scroll on top
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 1000) {
+            $('.chevron').fadeIn();
+        } else {
+            $('.chevron').fadeOut();
+        }
+    });
+
+    //Slowly scroll
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+
+    //Modal
+
+    $('.contact__button').on('click', function() {
+        $('.overlay, .modal-data').fadeIn('slow');
+    });
+
+    $('.button_large').on('click', function() {
+        $('.overlay, .modal-payment').fadeIn('slow');
+    });
+
+    $('.modal__close').on('click', function() {
+        $('.overlay, .modal-payment, .modal-data').fadeOut('slow');
+    });
+
+
         
 });

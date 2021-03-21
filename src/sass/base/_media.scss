@@ -607,6 +607,16 @@
             }
         }
     }
+    .modal {
+        .questions-block {
+            &__subtitle-block {
+                padding: 20px 30px 19px 30px;
+            }
+            &__subtile {
+                font-size: 13px;
+            }
+        }
+    }
 }
 @media(max-width: 620px) {
     .schema {
@@ -657,7 +667,130 @@
             margin-right: 20px;
         }
     }
+    .modal {
+        .questions-block {
+            &__subtitle-block {
+                padding: 20px 30px 19px 30px;
+            }
+            &__subtile {
+                font-size: 13px;
+            }
+        }
+        .form {
+            input {
+                font-size: 11px;
+            }
+        }
+    }
+    .chevron {
+        right: 10px;
+    }
 }
 @media(max-width: 484px) {
-
+    .header {
+        &__hamburger {
+            width: 30px;
+            height: 12px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+        .logo {
+            width: 48px;
+            height: 58px;
+            right: 53%;
+        }
+        .contact {
+           .button {
+            width: 87px;
+            height: 26px;
+            font-size: 8px;
+            } 
+        }   
+    }
+    .promo {
+        &__global {
+            font-size: 11px;
+        }
+        &__header {
+            font-size: 29px;
+        }
+        &__subheader {
+            font-size: 14px;
+        }
+        &__item {
+            max-width: 260px;
+            margin-bottom: 20px;
+        }
+    }
+    .advantages {
+        .advantages-item {
+            max-width: 260px;
+        }
+    }
+    .job {
+        .job-item {
+            max-width: 260px;
+        }
+    }
+    .schema {
+        .schema-item {
+            max-width: 260px;
+        }
+    }
+    .reviews {
+        .carousel {
+            &__descr {
+                max-width: 260px;
+            }
+        }
+    }
+    .footer {
+        padding: 0;
+        &__up {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        &__information {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        &__logo {
+            width: 60px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        .contact {
+            display: block;
+            margin: 0 auto;
+        }
+        &__down {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &__copyright {
+            margin-bottom: 10px;
+        }
+        &__item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 10px;
+            align-items: baseline;
+        }
+    }
+    .chevron {
+        width: 28px;
+    }
+    .modal {
+        &__close {
+            right: -26px;
+        }
+    }
 }
