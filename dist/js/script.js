@@ -76,6 +76,32 @@ $(document).ready(function(){
         $('.overlay, .modal-payment, .modal-data').fadeOut('slow');
     });
 
+    //validate
 
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+              name: "required",
+              email: {
+                required: true,
+                email: true
+              },
+              phone: "required" 
+            },
+            messages: {
+                name: "Пожалуйста введите свое имя",
+                email: {
+                  required: "Пожалуйста введите свою электронную почту",
+                  email: "Ваш e-mail должен иметь формат name@domain.com"
+                },
+                phone: "Пожалуйста введите свой номер телефона"
+              }
+        });
+    };
+
+    validateForms('.consultation__form');
+    validateForms('#questions-form');
+    validateForms('#data-form');
+    validateForms('#paymant-form');
         
 });

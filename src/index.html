@@ -11,7 +11,7 @@
     <title>Glupt</title>
 </head>
 <body>
-    <section id="up" class="promo">
+    <div id="up" class="promo">
         <div class="container">
             <header class="header">
                 <div class="logo">
@@ -88,7 +88,7 @@
             </div>
             <button class="button button_large center">Получить расчет</button>
         </div>
-    </section>
+    </div>
     <section class="advantages">
         <div class="container">
             <h2 class="title advantages__title center">Преимущества работы с GlobalOpt</h2>
@@ -305,7 +305,7 @@
         <div class="container">
             <h2 class="consultation__subtitle">Заказать бесплатную консультацию</h2>
             <div class="consultation__item">
-                <form class="consultation__form" novalidate="novalidate">
+                <form class="consultation__form">
                     <div class="consultation__agent">
                         <div class="round consultation__round">
                             <img src="icon/icon_4_5.png" alt="">
@@ -488,14 +488,14 @@
                     <h2 class="questions-block__subtile">Остались вопросы?</h2>
                     <div class="questions-block__descr">Напишите нам!</div>
                 </div>
-                <form class="form">
+                <form class="form" id="questions-form">
                     <div class="form__input">
                         <input name="name" placeholder="Ваше имя..." type="text">
                         <input name="phone" placeholder="Ваш номер телефона...">
                         <input name="email" placeholder="Ваш e-mail..." type="email">
                     </div>
                     <div class="form__textarea">
-                        <textarea name="textarea" placeholder="Сообщение..." type="textarea"></textarea>
+                        <textarea name="textarea" placeholder="Сообщение..."></textarea>
                     </div>
                     <button class="button buttin_medium center">Отправить заявку</button>
                 </form>
@@ -503,7 +503,7 @@
         </div>
     </section>
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8982.766804837616!2d37.622894277601624!3d55.7464855061113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0xc07a1ddef8d26a79!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINC-0YTQuNGBIDQt0LEsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTUwMzU!5e0!3m2!1sru!2sua!4v1615890786142!5m2!1sru!2sua" width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8982.766804837616!2d37.622894277601624!3d55.7464855061113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0xc07a1ddef8d26a79!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINC-0YTQuNGBIDQt0LEsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTUwMzU!5e0!3m2!1sru!2sua!4v1615890786142!5m2!1sru!2sua" width=100 height=100 style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <footer class="footer">
         <div class="container">
@@ -543,46 +543,46 @@
     </footer>
 
     <a href="#up" class="chevron">
-        <img src="icon/chevron-circle-up-solid (1).svg" alt="chevron">
+        <img src="icon/chevron-circle-up-solid.svg" alt="chevron">
     </a>
 
     <div class="overlay">
         <div class="modal modal-data">
-            <div class="modal__close">&times</div>
+            <div class="modal__close">&times;</div>
             <div class="questions-block">
                 <div class="questions-block__subtitle-block">
                     <h2 class="questions-block__subtile">Укажите свои данные</h2>
                     <div class="questions-block__descr">и мы свяжемся с вами!</div>
                 </div>
             </div>
-            <form class="form modal__form">
+            <form class="form modal__form" id="data-form">
                 <div class="form__input">
-                    <input name="name" placeholder="Ваше имя..." type="text">
+                    <input name="name" required placeholder="Ваше имя..." type="text">
                     <input name="phone" placeholder="Ваш номер телефона...">
                     <input name="email" placeholder="Ваш e-mail..." type="email">
                 </div>
                 <div class="form__textarea">
-                    <textarea name="textarea" placeholder="Сообщение..." type="textarea"></textarea>
+                    <textarea name="textarea" placeholder="Сообщение..."></textarea>
                 </div>
                 <button class="button buttin_medium center">Отправить заявку</button>
             </form>
         </div>
 
         <div class="modal modal-payment">
-            <div class="modal__close">&times</div>
+            <div class="modal__close">&times;</div>
             <div class="questions-block">
                 <div class="questions-block__subtitle-block">
                     <h2 class="questions-block__subtile">Оставьте всю необходимую информацию и мы произведем расчет</h2>
                 </div>
             </div>
-            <form class="form modal__form">
+            <form class="form modal__form" id="paymant-form">
                 <div class="form__input">
                     <input name="name" placeholder="Ваше имя..." type="text">
                     <input name="phone" placeholder="Ваш номер телефона...">
                     <input name="email" placeholder="Ваш e-mail..." type="email">
                 </div>
                 <div class="form__textarea">
-                    <textarea name="textarea" placeholder="Сообщение..." type="textarea"></textarea>
+                    <textarea name="textarea" placeholder="Сообщение..."></textarea>
                 </div>
                 <button class="button buttin_medium center">Отправить заявку</button>
             </form>
@@ -592,6 +592,7 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
