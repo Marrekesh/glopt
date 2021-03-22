@@ -335,16 +335,15 @@
     }
 }
 @media(max-width: 768px) {
-    .comtainer {
-        max-width: none;
-    }
     .header {
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 20px;
-        position: relative;
         min-height: 70px;
-        overflow: hidden; 
+        // overflow: hidden; 
+        &__inner {
+           display: flex;
+           justify-content: space-between;
+ 
+        }
         .logo {
             position: absolute;
             right: 50%;
@@ -405,7 +404,7 @@
         &__hamburger {
             display: block;
             width: 40px;
-            height: 21px;
+            height: 10px;
             transform: translateY(-50%);
             cursor: pointer;
             span {
