@@ -261,6 +261,15 @@
         &__subtitle {
             font-size: 24px;
         }
+        &__form {
+            display: flex;
+            flex-wrap: wrap;
+            min-height:200px;
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
         .button {
             width: 150px;
             height: 40px;
@@ -294,12 +303,16 @@
         .form {
             &__input {
                 display: flex;
-                justify-content: center;   
+                justify-content: center;
+                flex-direction: column;
+                input {
+                    width: 100%;
+                }   
             }
-            .button {
-                width: 150px;
-                height: 40px;
-            }
+        }
+        .button {
+            width: 150px;
+            height: 40px;
         }
     }
     .footer {
@@ -337,8 +350,7 @@
 @media(max-width: 768px) {
     .header {
         margin-bottom: 20px;
-        min-height: 70px;
-        // overflow: hidden; 
+        min-height: 70px; 
         &__inner {
            display: flex;
            justify-content: space-between;
@@ -525,15 +537,6 @@
         &__item {
             min-height:200px;
         }
-        &__form {
-            display: flex;
-            flex-wrap: wrap;
-            min-height:200px;
-            input {
-                width: 100%;
-                margin-bottom: 10px;
-            }
-        }
         .button {
             width: 150px;
             height: 40px;
@@ -569,18 +572,6 @@
         .carousel {
             &__descr {
                 width: 500px;
-            }
-        }
-    }
-    .questions {
-        .form {
-            &__input {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                input {
-                    width: 100%;
-                }   
             }
         }
     }
