@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(document).ready(function($){
     $('.carousel').slick({
         infinite:true,
         centerMode: true,
@@ -25,18 +25,18 @@ $(document).ready(function(){
       
     //Card
 
-      function toggleSlide(item) {
-        $(item).each(function(i) {
-            $(this).on('click', function(e) {
-                e.preventDefault();
-                $('.variant-item__content').eq(i).toggleClass('variant-item__content_active');
-                $('.variant-item__switch').eq(i).toggleClass('variant-item__switch_active');
-            })
-        });
-    };
+    // function toggleSlide(item) {
+    //     $(item).each(function(i) {
+    //         $(this).on('click', function(e) {
+    //             e.preventDefault();
+    //             $('.variant-item__content').eq(i).toggleClass('variant-item__content_active');
+    //             $('.variant-item__switch').eq(i).toggleClass('variant-item__switch_active');
+    //         })
+    //     });
+    // };
 
-    toggleSlide('.variant-item__details');
-    toggleSlide('.variant-item__back');
+    // toggleSlide('.variant-item__details');
+    // toggleSlide('.variant-item__back');
 
     //Hamburger
 

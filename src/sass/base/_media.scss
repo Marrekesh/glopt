@@ -6,7 +6,7 @@
     .header {
         .logo {
             width: 83px;
-            height: 98px;
+            height: 83px;
         }
         &__item {
             padding-right: 13px;
@@ -305,9 +305,7 @@
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
-                input {
-                    width: 100%;
-                }   
+                width: 100%;   
             }
         }
         .button {

@@ -1,6 +1,9 @@
 .questions {
     min-height: 438px;
-    background: url("../img/background_3.png") center (center/cover) no-repeat;
+    // background: url("../img/background_3.png") center (center/cover) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
     padding: 62px 0 79px 0;
 }
 .questions-block {

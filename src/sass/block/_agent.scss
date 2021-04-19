@@ -1,6 +1,9 @@
 .agent {
     min-height: 342px;
-    background: url("../img/background_2.png") center (center/cover) no-repeat;
+    // background: url("../img/background_2.png") center (center/cover) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
     padding: 58px 0 74px 0;
     &__title {
         text-align: center;
